@@ -1,0 +1,9 @@
+<body>
+    <div class="shopList">
+        <mat-form-field appearance="fill">
+            <mat-select (selectionChange)="jewelleryType()" [(ngModel)]="chosenImage">
+                <mat-option *ngFor="let jewellery of jewelleryObjectInput" [value]="jewellery">{{jewellery.name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+    </div>
+</body>

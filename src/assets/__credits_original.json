@@ -1,0 +1,25 @@
+{
+    "mainbackground": {
+        "photo_location": "mainbackground.jpg"
+    },
+    "chakra_bracelet": {
+        "photo_location": "chakra_bracelet.jpg",
+        "price": "3.000 Ft"
+    },
+    "silver_hearth_necklace": {
+        "photo_location": "silver_hearth_necklace.jpg",
+        "price": "6.700 Ft"
+    },
+    "white_gold_ring": {
+        "photo_location": "white_gold_ring.jpg",
+        "price": "9.800 Ft"
+    },
+    "pair_bracelet": {
+        "photo_location": "pair_bracelet.jpg",
+        "price": "2.500 Ft"
+    },
+    "titanium_steel_ring": {
+        "photo_location": "titanium_steel_ring.jpg",
+        "price": "4.900 Ft"
+    }
+}

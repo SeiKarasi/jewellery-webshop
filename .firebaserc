@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "jewellery-webshop-webfejl-2022": {
+      "hosting": {
+        "jewellery-webshop": [
+          "jewellery-webshop-webfejl-2022"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "jewellery-webshop-webfejl-2022"
+  }
+}

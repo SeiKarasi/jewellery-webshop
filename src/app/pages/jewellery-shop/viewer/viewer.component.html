@@ -1,0 +1,58 @@
+<body>
+    <div class="div-card" *ngIf="imageInput">
+        <mat-card>
+            <span>
+                <mat-card-header fxLayoutAlign="center">
+                    <mat-card-title>{{imageInput.name}}</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <img class="jewelleryImage" [src]="loadedImage" />
+                    <div class="card-content">{{imageInput.description}}</div>
+                    <div class="card-content" id="price">{{imageInput.price}}</div>
+                    <div class="card-content"><button type="button" (click)="inc()"><mat-icon>add</mat-icon></button></div>
+                    <div class="card-content">{{imageInput.count}}</div>
+                    <div class="card-content"><button type="button" (click)="dec()"><mat-icon>remove</mat-icon></button></div>
+                    <div class="card-content"><button type="button"  (click)="addToCart(imageInput)" class="cart_button">Kosárba tesz</button></div>
+                </mat-card-content>
+            </span>
+            <span>
+                <mat-card-actions>
+                    <form [formGroup]="commentsForm" (ngSubmit)="addComment()">
+                        <div>
+                            <mat-form-field>
+                                <mat-label for="comment">Komment: </mat-label>
+                                <textarea matInput id="comment" rows="10" cols="40"
+                                    formControlName="comment"></textarea>
+                            </mat-form-field>
+                        </div>
+                        <div>
+                            <button mat-raised-button color="primary" type="submit">Hozzáadás</button>
+                        </div>
+                    </form>
+                </mat-card-actions>
+            </span>
+        </mat-card>
+        <h2 *ngIf="comments.length > 0" class="comments">Kommentek:</h2>
+        <div *ngIf="comments.length > 0">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Felhasználónév</th>
+                        <th>Komment</th>
+                        <th>Dátum</th>
+                        <th>Kontrol</th>
+                    </tr>
+                </thead>
+                <tbody *ngFor="let comment of comments; let i = index"
+                    [ngClass]="i % 2 === 0 ? 'comment-even' : 'comment-odd'">
+                    <tr>
+                        <td id="comment_username">{{comment.username}}</td>
+                        <td id="comment_comment">{{comment.comment}}</td>
+                        <td>{{comment.date | dateFormat}}</td>
+                        <td><button (click)="deleteComment(comment.id, comment.username)">Törlés</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>

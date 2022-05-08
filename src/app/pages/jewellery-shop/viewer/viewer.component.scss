@@ -1,0 +1,95 @@
+
+.jewelleryImage {
+    width: 90%;
+    height: auto;
+}
+
+table, th, td {
+    border: 1px solid black;
+    margin-top: 20%;
+    text-align: center;
+}
+
+table {
+    position: absolute;
+    width: 650px;
+    table-layout:fixed;
+    top: 5%;
+    left: 0;
+ 
+}
+
+.comments {
+    position: absolute;
+    top: 22%;
+    left: 0;
+    font-size: 250%;
+}
+
+td {
+    word-wrap:break-word;
+}
+
+#comment_username {
+    font-size: 110%;
+    font-weight: bolder;
+}
+
+.comment-even {
+    background-color: #D694E6;
+}
+
+.comment-odd {
+    background-color: #E9CFEF;
+}
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+.div-card {
+    padding: 20px;
+}
+
+mat-form-field {
+    align-self: center;
+    width: 50%;
+}
+
+span {
+    margin: 5px;
+}
+
+mat-card {
+    margin-left: 40%;
+    width: 40%;
+    height: 60%;
+    align-self: center;
+ }
+
+ .card-content {
+     text-align: center;
+     margin: 2%;
+     font-size: 16px;
+ }
+
+ #price {
+     font-size: 24px;
+     font-weight: bolder;
+ }
+
+ .cart_button {
+     border-radius: 4px;
+     background-color: #D694E6;
+     color: #E9CFEF;
+     font-weight: 800;
+     font-size: 18px;
+ }
+
+ .cart_button:hover {
+     background-color: purple;
+ }
+
+
+
